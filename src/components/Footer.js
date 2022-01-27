@@ -12,7 +12,7 @@ function Footer() {
  
     <div className="footer-container" id="contact">
 
-    <div className='upper-line'>
+    <div className='upper-line '>
     <img className="logo-brands" src="/images/11.png" path="/about" alt=""/> 
     <img className="logo-brands" src="/images/22.png" path="/about" alt=""/>
     <img className="logo-brands" src="/images/33.png" path="/about" alt=""/>
@@ -61,10 +61,10 @@ function Footer() {
 </div>
   
 {/* second row with 1 column */}
-<div className="row second-row ">
+<div className="row second-row">
   <div className="col-12 d-flex justify-content-center ">
   <div className="website-rights ">
-  <span> © 2022.<a href="https://www.nextek.se/" class="nextek" target="_blank" rel="noreferrer" > Digital Magic by NexTek</a>
+  <span className="span-lastRow "> © 2022.<a href="https://www.nextek.se/" class="nextek" target="_blank" rel="noreferrer" > Digital Magic by NexTek</a>
   
  </span> 
  </div>

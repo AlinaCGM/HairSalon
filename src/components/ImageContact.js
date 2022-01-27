@@ -1,13 +1,13 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageContact.css';
-// import FadeInSection from "./FadeInSection";
+import Fade from 'react-reveal/Fade';
 
 
  
 const ImageContact = () => {
   return ( 
-    // <FadeInSection>
+  <Fade right>
     <div className="ImageContact-container" id="imageContact">
      <div className="title text-left img-contText">
      <p className='boldy-first '>WANNA GET A BRAND NEW LOOK OR REFRESH YOUR CURRENT HAIRDO? </p>
@@ -36,7 +36,7 @@ const ImageContact = () => {
 
    
 </div>
-    //   {/* </FadeInSection>   */}
+    </Fade>
   );
 };
 

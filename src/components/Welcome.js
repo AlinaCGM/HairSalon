@@ -2,13 +2,14 @@ import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Welcome.css';
-// import FadeInSection from "./FadeInSection";
-
+//  import FadeInSection from "./FadeInSection";
+import Fade from 'react-reveal/Fade';
 
 
 const Welcome = () => {
   return ( 
-    // <FadeInSection>
+    <Fade right>
+
     <div className="second-container" id="second">
       
      
@@ -24,9 +25,9 @@ aliquam. Purus ornare ultricies nunc, mi et leo. Commodo egestas bibendum pulvin
 </div>
       </div>   
 
-    
-</div>
-    //   {/* </FadeInSection>   */}
+     </div>
+
+</Fade>
   );
 };
 

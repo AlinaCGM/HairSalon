@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./Review.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import FadeInSection from "./FadeInSection";
+import Fade from 'react-reveal/Fade';
 
 
 export default class Review extends Component {
@@ -19,6 +20,7 @@ export default class Review extends Component {
     };
     return (
       // <FadeInSection>
+      <Fade right>
       <div className="slider-container ">
   
       <div className="image-slider ">
@@ -62,6 +64,7 @@ export default class Review extends Component {
         </Slider>
       </div>
       </div>
+      </Fade>
       // </FadeInSection> 
     );
   }

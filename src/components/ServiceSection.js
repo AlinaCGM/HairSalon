@@ -1,13 +1,14 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ServiceSection.css';
-// import FadeInSection from "./FadeInSection";
-
+//  import FadeInSection from "./FadeInSection";
+import Zoom from 'react-reveal/Zoom';
 
  
 const  ServiceSection = () => {
   return ( 
-    // <FadeInSection>
+    //  <FadeInSection>
+    <Zoom>
     <div className="cardPics-container container" id="second">
       <h4 className='title text-center'><h2 className='boldy fs-4'>HAIRDRESSING</h2> SERVICES</h4>
      
@@ -50,7 +51,8 @@ const  ServiceSection = () => {
 
    
 </div>
-    //   {/* </FadeInSection>   */}
+</Zoom>
+    //  </FadeInSection>  
   );
 };
 

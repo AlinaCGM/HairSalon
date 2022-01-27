@@ -12,8 +12,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo align-middle">
-            HairSalon
-            <i className="fas fa-code"></i>
+          <div><img className="img_logo_nav " src="../images/logo.png" path="/about" alt=""/></div>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>

@@ -68,7 +68,7 @@
     width: 80px;  
   }
    .second-row {
-    
+    width: 100%;
     margin: auto;
   } 
   .social-icon-link {
@@ -84,7 +84,7 @@
     color: rgb(35, 37, 41);
     text-decoration: none;
   }
-  span {
+  .span-lastRow{
     display: inline-flex;
-   
+    width: 100%;
   }
