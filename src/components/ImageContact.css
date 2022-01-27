@@ -1,5 +1,5 @@
 .ImageContact-container {
-    border:1px solid red;
+
     position: relative;
     width:100%;
     height: auto;
@@ -16,7 +16,7 @@
 
 
 .boldy-first {
-    border:1px solid red;
+   
     font-weight: 600;
     font-size: 14px;
     padding-top: 0.5rem;
