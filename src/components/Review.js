@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "./Review.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import FadeInSection from "./FadeInSection";
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 
 export default class Review extends Component {
@@ -19,8 +18,8 @@ export default class Review extends Component {
       autoplaySpeed: 1000
     };
     return (
-      // <FadeInSection>
-      <Fade right>
+     
+      <Zoom delay={2800} right>
       <div className="slider-container ">
   
       <div className="image-slider ">
@@ -64,8 +63,8 @@ export default class Review extends Component {
         </Slider>
       </div>
       </div>
-      </Fade>
-      // </FadeInSection> 
+      </Zoom>
+    
     );
   }
 }
