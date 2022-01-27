@@ -9,6 +9,7 @@
     background-size: contain;
     background-position: right top;
     background-color: #F7F7F7;
+    
 }
 
 
@@ -32,25 +33,36 @@
     position: absolute;
     width:8rem;
     margin: auto;
-    bottom:10%;
+    bottom:10px;
     left:1rem;
 }
-tr{
+/* tr{
     background-color: #7B7676;
-}
-tr:hover {
+} */
+/* tr:hover {
     background-color: #c7bfbf;
     border:#7B7676;
     
-}
+} */
 td {
-    border-bottom: 5px solid #ffffff;
+   
     height: 2rem;
+    
 }
+input {
+    background-color: #7B7676;
+}
+::placeholder {
+    background-color: #7B7676;
+}
+
 .contact-title {
     width:15rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+.name-input {
+    width:100%;
 }
 @media( min-width:768px) {
     .table-contact {

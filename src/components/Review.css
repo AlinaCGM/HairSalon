@@ -7,12 +7,12 @@
   background-color: none;
   padding-bottom: 2rem;
   padding-top:2rem;
- 
+  
  
 }
 .image-slider  {
-  
-  width: 100%;
+  margin: auto;
+  width: 90%;
   height: auto;
 }
 .img-review {
@@ -25,5 +25,5 @@
 
 span {
   display: inline-flex;
-  width: 100%;
+  width: 90%;
 }

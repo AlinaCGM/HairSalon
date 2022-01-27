@@ -7,11 +7,11 @@
     padding: 2rem 0 0 0;
     display: flex;
     flex-direction: column; 
-    overflow-x: hidden;
+   
   }
   .upper-line {
       width:100%;
-      height: autom;
+      height: auto;
       background-color:#7B7676 ;
       position: absolute;
       top:0;
@@ -26,7 +26,7 @@
   .logo-brands{
     width:80px;
     height: auto;
-   
+
   }
   .img_logo {
     width: 150px;
@@ -67,9 +67,10 @@
     justify-content: space-between;
     width: 80px;  
   }
-  /* .second-row {
-    background-color: #414141;
-  } */
+   .second-row {
+    
+    margin: auto;
+  } 
   .social-icon-link {
     color: #fff;
     font-size: 24px;
@@ -85,5 +86,5 @@
   }
   span {
     display: inline-flex;
-    width: 100%;
+   
   }

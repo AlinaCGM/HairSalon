@@ -18,15 +18,15 @@ const ImageContact = () => {
   <table className='table-contact '>
   <div><p className='small-second contact-title text-center'>Just contact us!</p></div>
   <tr>
-    <td><input placeholder="Name"></input></td>
+    <td><input placeholder="Name" className='name-input'></input></td>
   
   </tr>
   <tr>
-    <td></td>
+    <td><input placeholder="Email" className='name-input'></input></td>
    
   </tr>
   <tr>
-    <td></td>
+    <td><input placeholder="Pnone" className='name-input'></input></td>
     
    
   </tr>

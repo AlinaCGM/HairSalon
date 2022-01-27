@@ -64,7 +64,7 @@ function Footer() {
 <div className="row second-row ">
   <div className="col-12 d-flex justify-content-center ">
   <div className="website-rights ">
-  <span> © 2022  . <a href="https://www.nextek.se/" class="nextek" target="_blank" rel="noreferrer" > Digital Magic by NexTek</a>
+  <span> © 2022.<a href="https://www.nextek.se/" class="nextek" target="_blank" rel="noreferrer" > Digital Magic by NexTek</a>
   
  </span> 
  </div>
