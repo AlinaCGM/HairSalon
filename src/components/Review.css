@@ -1,0 +1,29 @@
+
+.slider-container  {
+ 
+  width: 90%;
+  height: auto;
+  margin: auto;
+  background-color: none;
+  padding-bottom: 2rem;
+  padding-top:2rem;
+ 
+ 
+}
+.image-slider  {
+  
+  width: 100%;
+  height: auto;
+}
+.img-review {
+
+  width: 50%;
+  max-height: 200px;
+  margin: auto;
+  object-fit: contain;
+}
+
+span {
+  display: inline-flex;
+  width: 100%;
+}

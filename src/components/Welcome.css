@@ -1,0 +1,61 @@
+.second-container {
+    width:90%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  .foto-pic {
+    width:100%;
+    height: auto;
+  }
+  @media(min-width:768px) {
+    .foto-pic {
+     display: none;
+    }
+    .second-box {
+      width: 100%;
+      height: auto;
+      min-height: 20vh;
+    }
+    .foto {
+   
+    background-image: url(../images/tools.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    }
+  }
+
+.foto-text {
+   
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #C4C4C4;
+    
+}
+.welcome-text {
+    padding-top: 1rem;
+    letter-spacing: 3px;
+    font-size: 18px; 
+    line-height: 30px;
+}
+.welcome-second {
+    letter-spacing:2px;
+    font-size: 14px;
+    line-height: 20px;
+}
+@media(min-width:1440px) {
+  .welcome-text {
+    padding-top: 1rem;
+    letter-spacing: 3px;
+    font-size: 20px; 
+    line-height: 30px;
+}
+.welcome-second {
+  padding-top: 5px;
+    letter-spacing:1.5px;
+    font-size: 14px;
+    line-height: 25px;
+}
+}

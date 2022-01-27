@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/* .home, */
+.about,
+.contact,
+.blog,
+.shop,
+.booking,
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 4rem;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  text-shadow: 4px 4px 4px #fff;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+.boldy {
+font-weight: 600;
+display: inline;
+}
+.home {
+  background-color: #E5E5E5;
+}
+.about {
+  background-color:red;
+}
+
+.blog {
+  background-color:green;
+}
+
+.booking {
+  background-color:blue;
+}
+
+.contact {
+  background-color:yellow;
+}
+
+.services {
+  background-color:rgb(221, 33, 205);
+}
+

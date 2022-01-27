@@ -1,0 +1,64 @@
+.cardPics-container {
+    /* border:1px solid rgb(182, 11, 82); */
+    width:100%;
+    height:auto;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+  .all-pics {
+    /* border:1px solid rgb(22, 175, 22); */
+    /* background-color: #C4C4C4; */
+    margin: 0.5rem ; 
+    width:auto;
+    height: 100%;
+    align-items: center;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.foto-card {
+    width:100%;
+    height: auto;
+    
+}
+ 
+
+/* .card-1 {
+    width:100px;
+    height: 200px;
+    background-image:url(../images/one.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-2 {
+    width:100px;
+    height: 200px;
+    background-image:url(../images/two.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-3 {
+    width:100px;
+    height: 200px;
+    background-image:url(../images/three.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-4 {
+    width:100px;
+    height: 200px;
+    background-image:url(../images/four.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.name-pics {   
+ height:60px;
+background-color: #C4C4C4; 
+padding-top: 20px;
+ font-size: small;
+}   

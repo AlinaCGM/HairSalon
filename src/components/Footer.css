@@ -1,0 +1,89 @@
+.footer-container {
+    position: relative;
+    background-color:#3A3939;
+    color:#fff;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column; 
+    overflow-x: hidden;
+  }
+  .upper-line {
+      width:100%;
+      height: autom;
+      background-color:#7B7676 ;
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      margin: auto;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .logo-brands{
+    width:80px;
+    height: auto;
+   
+  }
+  .img_logo {
+    width: 150px;
+    
+    height: auto;
+  }
+  
+  .followUs {
+    font-size: 14px;
+  }
+  .footer-col {
+  
+    width: 50%;
+    height: auto;
+    padding-top: 1rem;
+  }
+  
+  .footer-link-items {
+ 
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 14px;
+    height:auto;
+    color: aliceblue;
+    box-sizing: border-box;
+    text-decoration: none;
+  } 
+  .footer-link-items a {
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  .address {
+    color:rgb(255, 255, 255);
+  }
+
+  .social-icons {
+    justify-content: space-between;
+    width: 80px;  
+  }
+  /* .second-row {
+    background-color: #414141;
+  } */
+  .social-icon-link {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    
+  }
+  .website-rights  {
+    color: rgb(35, 37, 41);
+  }
+  .nextek {
+    color: rgb(35, 37, 41);
+    text-decoration: none;
+  }
+  span {
+    display: inline-flex;
+    width: 100%;
+  }
