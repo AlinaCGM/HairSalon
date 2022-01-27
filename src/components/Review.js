@@ -19,7 +19,7 @@ export default class Review extends Component {
     };
     return (
      
-      <Zoom delay={2200}>
+      <Zoom delay={400}>
       <div className="slider-container ">
   
       <div className="image-slider ">

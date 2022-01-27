@@ -14,7 +14,7 @@ const  ServiceSection = () => {
       <h4 className='title text-center'><h2 className='boldy fs-4'>HAIRDRESSING</h2> SERVICES</h4>
       </Zoom>
     <div className='row d-flex justify-content-around '>
-    <Zoom  delay={1400}>
+    <Zoom  delay={1300}>
    <div className="col-11 col-md-6 col-lg-3">
     <div className="all-pics card-1"> 
      <img className="foto-card card-1" src="/images/one.jpeg" path="/about"alt=""/>  
@@ -24,7 +24,7 @@ const  ServiceSection = () => {
     </Zoom>
     <br/>
 
-    <Zoom  delay={1600}>
+    <Zoom  delay={1400}>
     <div className="col-11 col-md-6 col-lg-3">
     <div className=" all-pics card-2">
      <img className="foto-card card-2" src="/images/two.jpeg" path="/about"alt=""/> 
@@ -35,7 +35,7 @@ const  ServiceSection = () => {
     <br/>
 
 
-    <Zoom  delay={1800}>
+    <Zoom  delay={1500}>
     <div className="col-11 col-md-6 col-lg-3">
     <div className=" all-pics card-3">
      <img className="foto-card card-3" src="/images/three.jpeg" path="/about"alt=""/>
@@ -45,7 +45,7 @@ const  ServiceSection = () => {
     </Zoom>
     <br/>
 
-    <Zoom  delay={2000}>
+    <Zoom  delay={1600}>
     <div className="col-11 col-md-6 col-lg-3">
     <div className=" all-pics card-4">
      <img className="foto-card " src="/images/four.jpeg" path="/about"alt=""/> 

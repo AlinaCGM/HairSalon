@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
  
 const ImageContact = () => {
   return ( 
-  <Fade right>
+  <Fade>
     <div className="ImageContact-container" id="imageContact">
      <div className="title text-left img-contText">
      <p className='boldy-first '>WANNA GET A BRAND NEW LOOK OR REFRESH YOUR CURRENT HAIRDO? </p>
