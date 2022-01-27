@@ -9,13 +9,17 @@ const ImageContact = () => {
   return ( 
   <Fade>
     <div className="ImageContact-container" id="imageContact">
-     <div className="title text-left img-contText">
+   
+    <div className=" title img-contText large">
      <p className='boldy-first '>WANNA GET A BRAND NEW LOOK OR REFRESH YOUR CURRENT HAIRDO? </p>
     <p className='small-second '> We offer a high range of hairdressing and hair care services. </p>
     </div>
-    {/* <br/>Just contact us! */}
-    
+   <div> 
   <table className='table-contact '>
+  <div className="title img-contText small">
+     <p className='boldy-first '>WANNA GET A BRAND NEW LOOK <br/>OR REFRESH YOUR CURRENT HAIRDO? </p>
+    <p className='small-second '> We offer a high range of hairdressing and hair care services. </p>
+    </div>
   <div><p className='small-second contact-title text-center'>Just contact us!</p></div>
   <tr>
     <td><input placeholder="Name" className='name-input'></input></td>
@@ -31,7 +35,7 @@ const ImageContact = () => {
    
   </tr>
 </table>
-     
+  </div>   
      
 
    

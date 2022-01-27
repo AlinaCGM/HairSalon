@@ -1,8 +1,9 @@
 .ImageContact-container {
+    border:1px solid red;
     position: relative;
     width:100%;
     height: auto;
-    min-height:40vh;
+    min-height:50vh;
     /* margin-bottom: 2rem; */
     background-image: url(../images/ic4.jpeg);
     background-repeat: no-repeat;
@@ -15,23 +16,24 @@
 
 
 .boldy-first {
+    border:1px solid red;
     font-weight: 600;
     font-size: 14px;
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     line-height: 18px;
     letter-spacing: 1px;
 }
 .small-second {
     font-size: 12px;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     line-height: 18px;
     letter-spacing: 0.5px;
 }
 .table-contact {
    
     position: absolute;
-    width:8rem;
+    width:4rem;
     margin: auto;
     bottom:10px;
     left:1rem;
@@ -64,45 +66,68 @@ input {
 .name-input {
     width:100%;
 }
+.large {
+    display:none;
+}
 @media( min-width:768px) {
     .table-contact {
-        bottom:20%;
-        width:10rem;
+        bottom:5%;
+        width:20rem;
         height: 5rem;
+    }
+    .boldy-first {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+    .large {
+        display:none;
     }
 }
 @media( min-width:1024px) {
     .boldy-first {
-        font-size: 22px;
+        font-size: 18px;
         padding-top: 2rem;
-        line-height: 30px;
+        line-height: 25px;
         letter-spacing: 4px;
     }
     .small-second {
         font-size: 14px;
-        line-height: 28px;
+        line-height: 24px;
         letter-spacing: 1px;
     }
     .table-contact {
-        bottom:10%;
-        width:15rem;
+        bottom:5%;
+        width:25rem;
         height: 6rem;
     }
+    .small {
+        display:none;
+    }
+    .large {
+        display: inline-block;
+    }
+   
 }
 @media( min-width:1440px){
     .boldy-first {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 40px;
         letter-spacing: 6px;
+        
     }
     .small-second {
         font-size: 18px;
-        line-height: 28px;
+        line-height: 18px;
         letter-spacing: 2px;
     }
     .table-contact {
-        bottom:10%;
+        bottom:5%;
         width:20rem;
         height: 8rem;
+        left:2rem;
+    }
+    .small {
+        display:none;
     }
 }
