@@ -11,14 +11,14 @@ function  HeroAbout () {
       <div className="heroabout-container" id="hero">
       <Zoom delay={500}>
      
-          <div className='row d-flex justify-content-center w-100'>
-          <div className="col-12 mainabout-img ">
+        
+          <div className="mainabout-img w-100">
                <h1 className=' text-center heroabout-title'>MAKE YOUR OWN MOMENTUM</h1>
           </div>
           
      
-            </div>   
-            </Zoom>
+             
+      </Zoom>
          
       </div>
     );

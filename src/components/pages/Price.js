@@ -1,12 +1,16 @@
 import React from 'react';
 import '../../App.css';
-
+import PriceList from '../PriceList.js';
+import Footer from '../Footer.js';
 
  function Price() {
   return (
   <div>
-  <h1 className='price' id="price">BLOG</h1>
-  BLOG
+  <div className='price' id="price">
+ 
+  </div>
+  <PriceList/>
+  <Footer/>
   
   </div> 
   );

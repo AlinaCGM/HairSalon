@@ -1,0 +1,55 @@
+.price-container {
+    width:100%;
+    height:auto;
+    margin: auto;
+    padding-bottom: 2rem;
+    position: relative;
+    background-color:rgb(209, 208, 208);
+  font-family: 'Roboto', sans-serif;
+
+}
+.slogan {
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px ;
+    line-height:35px;
+    letter-spacing:1px;
+}
+.img-price2 {
+
+    height: 30vh;
+    background-image: url(../images/price.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-position: center;
+}
+.table-container {
+    width:80%;
+    margin: auto;
+}
+.services-name {
+    border-bottom:5px solid #c0b8b8; 
+    font-size: 18px;
+      color:#5c5b5b;
+      letter-spacing:2px;
+}
+.table-price {
+    width:100%;
+    margin-top: 2rem;
+    padding-bottom:4rem;
+    color:#3A3939;
+}
+.description, .sek-price {
+    height:40px;
+   padding-top: 10px;
+    font-size: small;
+    letter-spacing:1px;
+}
+.sek-price {
+    text-align: right;
+}
+@media(min-width:1024px) {
+    .table-container {
+        width:60%;
+    }
+}
