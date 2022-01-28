@@ -9,7 +9,7 @@ const  ServiceSection = () => {
   return ( 
   
   
-    <div className="cardPics-container container" id="second">
+    <div className="cardPics-container container" id="aboutstuff">
        <Zoom delay={900}>
       <h4 className='title text-center'><h2 className='boldy fs-4'>HAIRDRESSING</h2> SERVICES</h4>
       </Zoom>

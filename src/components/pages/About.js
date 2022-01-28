@@ -1,13 +1,21 @@
 import React from 'react';
 import '../../App.css';
+import AboutServices from '../AboutServices.js';
+import HeroAbout from '../HeroAbout.js';
+import AboutStuff from '../AboutStuff.js';
+import MyGallery from '../MyGallery.js';
+import Footer from '../Footer.js';
 
 
 export default function About() {
   return (
   <div>
-  <h1 className='about' id="about">ABOUT US</h1>
-ABOUT
+ <HeroAbout/>
+ <AboutServices/>
+ <AboutStuff/>
+<MyGallery/>
+<Footer/>
   </div> 
   );
 }
-// export default About;
+// export default About; 

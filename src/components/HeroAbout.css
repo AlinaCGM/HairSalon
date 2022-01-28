@@ -1,0 +1,67 @@
+.heroabout-container {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    height: auto;
+    min-height: 50vh;
+    overflow-x: hidden;
+}
+.main-img, .heroabout-title {
+    height:auto;
+
+}
+
+
+.mainabout-img {
+    background-image: url(../images/ic5.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.heroabout-title {
+    position:absolute;
+    top:20%;
+    left:50%;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 26px;
+    line-height: 30px;
+   
+}
+
+@media(min-width:768px){
+    .heroabout-title {
+ 
+        font-weight: 500;
+        letter-spacing: 5px;
+        font-size: 26px;
+        line-height: 40px;
+       
+    }
+}
+@media(min-width:1440px){
+    .heroabout-container {
+       height:60vh;
+    }
+    .heroabout-title {
+       
+        letter-spacing: 5px;
+        font-size: 36px;
+        line-height: 40px;
+       
+    }
+}
+ @media(min-width:2100px){
+    .heroabout-container {
+       height:80vh;
+    }
+    .heroabout-title {
+        letter-spacing: 6px;
+        font-size: 46px;
+        line-height: 40px;
+       
+    }
+}

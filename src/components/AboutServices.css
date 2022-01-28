@@ -1,0 +1,105 @@
+.about-services{
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+     background: none;
+  font-family: 'Roboto', sans-serif;
+   }
+   
+   .container-aboutservices{
+    
+    width:100%;
+     display: flex;
+     align-items: stretch;
+     flex-wrap: wrap;
+   }
+   
+   .cart-container{
+   
+     width: 100%;
+     height: auto;
+     padding-top: 10px;
+     box-sizing: border-box; 
+     
+   } 
+   
+   .cart{
+     padding-top: 2rem;
+     padding-bottom: 10px;
+     background: transparent;
+     border-radius: 3px;
+     box-sizing: border-box;
+     display: block;
+     color: #000;
+     text-decoration: none;
+     transition: box-shadow 0.3s, transform 0.3s;
+     transform: scale(1);
+      
+   }
+   
+   .cart:hover{
+     transform: scale(1.05);
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+     z-index: 10;
+     
+      border-radius: 10%;
+     -webkit-transition: background-color 2000ms linear;
+     -ms-transition: background-color 2000ms linear;
+     transition: background-color 2000ms linear;
+   }
+ 
+ 
+   .img-all {
+     border: thick double #7B7676;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     margin: 10px auto 10px;
+     background-color: none;
+     background-position: center;
+     background-size: cover;
+   }
+   .cart .image-one{
+     background-image: url(../images/card-about1.png);  
+   } 
+ 
+   .cart .image-two{
+     background-image: url(../images/card-about2.png); 
+   }
+   .cart .image-three{
+     background-image: url(../images/card-about3.png); 
+   }
+   
+   
+   .cart .title-services{
+     font-size: 14px;
+     font-weight: 600;
+     color: #7B7676;
+     margin: auto;
+   }
+   
+/*    
+  @media (max-width:320px){
+   .cart .title-services{
+     font-size:18px;
+   }
+  }
+ 
+   @media only screen and (min-width: 600px) {
+     .cart-container{
+       width: 50%;
+     }
+   }
+   
+   @media only screen and (min-width: 1200px) {
+     .cart-container{
+       width: 25%;
+     }
+   }
+   
+   .carts-circle{
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+     */
