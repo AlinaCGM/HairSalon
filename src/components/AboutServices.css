@@ -10,9 +10,9 @@
    .container-aboutservices{
     
     width:100%;
-     display: flex;
+     /* display: flex;
      align-items: stretch;
-     flex-wrap: wrap;
+     flex-wrap: wrap; */
    }
    
    .cart-container{
@@ -72,20 +72,27 @@
    }
    
    
-   .cart .title-services{
+   .cart .titleabout-services{
      font-size: 14px;
      font-weight: 600;
-     color: #7B7676;
+     color: #3A3939;
+     line-height:25px;
      margin: auto;
+     letter-spacing:1px;
    }
-   
-/*    
-  @media (max-width:320px){
-   .cart .title-services{
-     font-size:18px;
+   .smalltext {
+    color: #3A3939;
+    line-height:20px;
+    letter-spacing:0.5px;
+    font-size:14px;
+   }
+    
+   @media (min-width:768px){
+    .container-aboutservices {
+      width:80%;
    }
   }
- 
+ /*
    @media only screen and (min-width: 600px) {
      .cart-container{
        width: 50%;
@@ -102,4 +109,4 @@
      max-width: 1200px;
      margin: 0 auto;
    }
-     */
+      */

@@ -8,7 +8,7 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 
 // import Shop from "./pages/Shop";
-import Booking from "./components/pages/Booking";
+import Price from "./components/pages/Price";
 import Services from "./components/pages/Services.js";
 
 
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path='/services' element={<Services/>}/>
-          <Route path="/booking" element={<Booking/>}/>
+          <Route path="/price" element={<Price/>}/>
           <Route path="/contact" element={<Contact/>}/>
           </Routes>
 

@@ -3,6 +3,7 @@
     margin:auto;
     width: 100%;
     height: auto;
+    justify-content: space-evenly;
 } 
 .title-gallery {
   background-color: none;
@@ -11,7 +12,14 @@
   font-family: 'Playfair Display', serif;
 }
 .card_inside {
+
+   width:80%; 
     margin: auto;
     margin-bottom: 1rem;
+    transition: transform .5s ease;
 } 
- 
+.card_inside:hover {
+  transform: scale(1.5);
+  z-index: 1;
+} 
+
