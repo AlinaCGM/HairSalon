@@ -1,13 +1,13 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageContact.css';
- import Fade from 'react-reveal/Fade';
+//  import Fade from 'react-reveal/Fade';
 
 
  
 const ImageContact = () => {
   return ( 
-   <Fade>
+  //  <Fade>
     <div className="ImageContact-container flex" >
   
     <div className=" title img-contText ">
@@ -38,7 +38,7 @@ const ImageContact = () => {
 
    
 </div>
-   </Fade>
+  //  </Fade>
   );
 };
 
