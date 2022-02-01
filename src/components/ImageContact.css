@@ -1,42 +1,66 @@
 .ImageContact-container {
-
+ 
     position: relative;
     width:100%;
-    height: auto;
+    height: 20vh;
     min-height:50vh;
-    /* margin-bottom: 2rem; */
-    background-image: url(../images/ic4.jpeg);
+    background-image: url(../images/bg2.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right top;
-    background-color: #F7F7F7;
-    
+    background-size: cover;
+    background-position: right center; 
+  
+   
 }
-
 
 
 .boldy-first {
    
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 0.5rem;
     padding-left: 0.5rem;
-    line-height: 18px;
-    letter-spacing: 1px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color:rgb(6, 45, 80);
+    -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+
+    
 }
 .small-second {
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 0.5rem;
+    font-weight: 600;
     line-height: 18px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    color:rgb(32, 56, 78);
+    -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+   
+}
+.small-third {
+    font-size: 20px;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    color:rgb(255, 255, 255);
+    -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+}
+.man {
+    width:70%;
+   
+    margin-left:4rem;
+
 }
 .table-contact {
-   
+  
     position: absolute;
     width:4rem;
     margin: auto;
     bottom:10px;
-    left:1rem;
+    right:10px;
 }
 /* tr{
     background-color: #7B7676;
@@ -53,9 +77,11 @@ td {
 }
 input {
     background-color: #7B7676;
+    color:rgb(255, 255, 255);
 }
 ::placeholder {
     background-color: #7B7676;
+    color:aliceblue;
 }
 
 .contact-title {
@@ -66,8 +92,15 @@ input {
 .name-input {
     width:100%;
 }
-.large {
-    display:none;
+
+@media( min-width:500px) {
+   
+    .small{
+        display:none;
+    }
+    .img-contText {
+        margin-left: 2rem;
+    }
 }
 @media( min-width:768px) {
     .table-contact {
@@ -76,37 +109,34 @@ input {
         height: 5rem;
     }
     .boldy-first {
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: 1px;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 2px;
     }
-    .large {
-        display:none;
+    .small-second {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 2px;
     }
 }
 @media( min-width:1024px) {
     .boldy-first {
-        font-size: 18px;
+        font-size: 28px;
         padding-top: 2rem;
-        line-height: 25px;
+        line-height: 35px;
         letter-spacing: 4px;
     }
     .small-second {
-        font-size: 14px;
+        font-size: 24px;
         line-height: 24px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .table-contact {
         bottom:5%;
         width:25rem;
         height: 6rem;
     }
-    .small {
-        display:none;
-    }
-    .large {
-        display: inline-block;
-    }
+
    
 }
 @media( min-width:1440px){
@@ -127,7 +157,5 @@ input {
         height: 8rem;
         left:2rem;
     }
-    .small {
-        display:none;
-    }
+    
 }

@@ -10,11 +10,11 @@ const  ServiceSection = () => {
   
   
     <div className="cardPics-container container" id="aboutstuff">
-       <Zoom delay={900}>
+       <Zoom delay={400}>
       <h4 className='title text-center'><h2 className='boldy fs-4'>HAIRDRESSING</h2> SERVICES</h4>
       </Zoom>
     <div className='row d-flex justify-content-around '>
-    <Zoom  delay={930}>
+    <Zoom  delay={430}>
    <div className="col-11 col-md-6 col-lg-3">
     <div className="all-pics card-1"> 
      <img className="foto-card card-1" src="/images/one.jpeg" path="/about"alt=""/>  
@@ -24,7 +24,7 @@ const  ServiceSection = () => {
     </Zoom>
     <br/>
 
-    <Zoom  delay={960}>
+    <Zoom  delay={440}>
     <div className="col-11 col-md-6 col-lg-3">
     <div className=" all-pics card-2">
      <img className="foto-card card-2" src="/images/two.jpeg" path="/about"alt=""/> 
@@ -35,7 +35,7 @@ const  ServiceSection = () => {
     <br/>
 
 
-    <Zoom  delay={990}>
+    <Zoom  delay={450}>
     <div className="col-11 col-md-6 col-lg-3">
     <div className=" all-pics card-3">
      <img className="foto-card card-3" src="/images/three.jpeg" path="/about"alt=""/>
@@ -45,7 +45,7 @@ const  ServiceSection = () => {
     </Zoom>
     <br/>
 
-    <Zoom  delay={1020}>
+    <Zoom  delay={460}>
     <div className="col-11 col-md-6 col-lg-3">
     <div className=" all-pics card-4">
      <img className="foto-card " src="/images/four.jpeg" path="/about"alt=""/> 

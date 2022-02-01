@@ -25,9 +25,10 @@
    } 
    
    .cart{
+   
      padding-top: 2rem;
      padding-bottom: 10px;
-     background: transparent;
+     /* background: transparent; */
      border-radius: 3px;
      box-sizing: border-box;
      display: block;
@@ -43,7 +44,7 @@
      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
      z-index: 10;
      
-      border-radius: 10%;
+      border-radius: 2%;
      -webkit-transition: background-color 2000ms linear;
      -ms-transition: background-color 2000ms linear;
      transition: background-color 2000ms linear;
@@ -54,6 +55,7 @@
      border: thick double #7B7676;
      width: 80px;
      height: 80px;
+
      border-radius: 50%;
      margin: 10px auto 10px;
      background-color: none;

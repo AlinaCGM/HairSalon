@@ -14,12 +14,12 @@ const Welcome = () => {
       
      
     <div className='row d-flex justify-content-around second-box'>
-    <Zoom delay={700}>
+    <Zoom delay={400}>
     <div className="col-sm-12 col-md-5 col-lg-4 foto ">
     <img className="foto-pic" src="/images/tools.jpg" path="/about"alt=""/> 
     </div>
     </Zoom>
-    <Zoom delay={900}>
+    <Zoom delay={500}>
 <div className="col-sm-10 col-md-6 col-lg-7 foto-text">
 <h2 className='welcome-text text-center'>WELCOME TO THE BEST HAIRDRESSING SALON IN STOCKHOLM</h2>
 <h4 className='welcome-second text-center align-top'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.

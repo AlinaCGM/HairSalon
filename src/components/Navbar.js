@@ -65,7 +65,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/#imageContact"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
