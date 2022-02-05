@@ -1,21 +1,22 @@
-import React from 'react';
-import '../../App.css';
-import AboutServices from '../AboutServices.js';
-import HeroAbout from '../HeroAbout.js';
-import AboutStuff from '../AboutStuff.js';
-import MyGallery from '../MyGallery.js';
-import Footer from '../Footer.js';
-
+import React from 'react'
+import '../../App.css'
+import AboutServices from '../AboutServices.js'
+import HeroAbout from '../HeroAbout.js'
+import AboutStuff from '../AboutStuff.js'
+import MyGallery from '../MyGallery.js'
+import Footer from '../Footer.js'
+import Navbar from '../Navbar'
 
 export default function About() {
   return (
-  <div>
- <HeroAbout/>
- <AboutServices/>
- <AboutStuff/>
-<MyGallery/>
-<Footer/>
-  </div> 
-  );
+    <div>
+      <Navbar />
+      <HeroAbout />
+      <AboutServices />
+      <AboutStuff />
+      <MyGallery />
+      <Footer />
+    </div>
+  )
 }
-// export default About; 
+// export default About;
