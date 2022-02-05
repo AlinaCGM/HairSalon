@@ -1,9 +1,83 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { db, storage } from '../../../firebase-config'
+import { useNavigate } from 'react-router-dom'
+import { collection, getDocs, updateDoc, doc } from 'firebase/firestore'
+import { ref, uploadBytes, getDownloadURL, getStorage } from 'firebase/storage'
+import { Image } from 'react-bootstrap'
 import '../../Herosection.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Zoom from 'react-reveal/Zoom'
 
 function HeroSectionEdit() {
+  const [postLists, setPostList] = useState([])
+  const [newText1, setNewText1] = useState('')
+  const [newTitle1, setNewTitle1] = useState('')
+  const [files1, setFiles1] = useState([])
+  const [image, setImage] = useState(null)
+  const postsCollectionRef = collection(db, 'frizerie')
+
+  const update1 = async () => {
+    const servicesDoc = doc(db, 'frizerie', '5JGFd1ZzJeltmZAqoEeJ')
+    await updateDoc(servicesDoc, {
+      texthero: newText1,
+      titlehero: newTitle1,
+    })
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    console.log('title', form.title, form.elements.title)
+    console.log('text', form.text, form.elements.text)
+  }
+
+  const handleSubmit1 = () => {
+    const imageRef = ref(storage, 'imageHairHero')
+    uploadBytes(imageRef, image)
+      .then(() => {
+        setImage(null)
+      })
+      .catch((error) => {
+        console.log(error.message)
+      })
+  }
+
+  const handleImageChange = (e) => {
+    if (e.target.files[0]) {
+      setImage(e.target.files[0])
+    }
+  }
+
+  useEffect(() => {
+    const getInfo = async () => {
+      const data = await getDocs(postsCollectionRef)
+      setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+
+      console.log(getInfo)
+    }
+
+    getInfo()
+    // eslint-disable-next-line
+  }, [])
+
+  const updatePage = async () => {
+    const data = await getDocs(postsCollectionRef)
+    setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+    return
+  }
+
+  const storage1 = getStorage()
+  getDownloadURL(ref(storage, 'image1')).then((url) => {
+    setFiles1(url)
+    return
+  })
+
+  const contentHero = postLists.map((text) => (
+    <>
+      <h1 className='header-text text-center'>{text.titlehero}</h1>
+      <h3 className='second-text text-center'>{text.texthero}</h3>
+    </>
+  ))
+
   return (
     <div>
       <div className='hero-container' id='hero'>
@@ -11,18 +85,7 @@ function HeroSectionEdit() {
           <div className='col-7 col-lg-8 main-img '></div>
 
           <Zoom delay={500}>
-            <div className='col-5  col-lg-4 hero-title'>
-              <h1 className='header-text text-center'>
-                BEST <br />
-                HAIRDRESSING <br />
-                IN TOWN
-              </h1>
-              <h3 className='second-text text-center'>
-                {' '}
-                The masters of our salon are certified and have significant
-                experience which ensures high quality of our services
-              </h3>
-            </div>
+            <div className='col-5  col-lg-4 hero-title'>{contentHero}</div>
           </Zoom>
         </div>
       </div>
