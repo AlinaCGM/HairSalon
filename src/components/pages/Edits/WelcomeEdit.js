@@ -32,7 +32,7 @@ function WelcomeSectionEdit() {
   }
 
   const handleSubmit1 = () => {
-    const imageRef = ref(storage, 'hairTemplate/imageHairHero')
+    const imageRef = ref(storage, 'hairTemplate/imageHairWelcome')
     uploadBytes(imageRef, image)
       .then(() => {
         setImage(null)
@@ -67,7 +67,7 @@ function WelcomeSectionEdit() {
   }
 
   const storage1 = getStorage()
-  getDownloadURL(ref(storage, 'hairTemplate/imageHairHero')).then((url) => {
+  getDownloadURL(ref(storage, 'hairTemplate/imageHairWelcome')).then((url) => {
     setFiles1(url)
     return
   })
