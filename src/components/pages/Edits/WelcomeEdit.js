@@ -89,7 +89,7 @@ function WelcomeSectionEdit() {
             className='col-sm-12 col-md-5 col-lg-4 foto  '
             style={{ backgroundImage: `url(${files1})` }}
           >
-            <Image className='foto-pic' path='/about' alt='foto'></Image>
+            <Image className='foto-pic' alt='foto'></Image>
           </div>
         </Zoom>
         <Zoom delay={500}>
