@@ -52,7 +52,7 @@ function HeroSection() {
                   exact
                   to='/editpage'
                   activeClassName='active'
-                  className='nav-links'
+                  className='nav-links buton-edit'
                   // onClick navigate='/login'
                 >
                   Edit Component
