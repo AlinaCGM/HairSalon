@@ -33,7 +33,7 @@ function HeroSection() {
 
   const contentHero = postLists.map((text) => (
     <>
-      <h1 className='header-text text-center'>{text.titlehero}</h1>
+      <h1 className='header-text text-center '>{text.titlehero}</h1>
       <h3 className='second-text text-center'>{text.texthero}</h3>
     </>
   ))
@@ -69,10 +69,10 @@ function HeroSection() {
                   exact
                   to='/editpage'
                   activeClassName='active'
-                  className='nav-links buton-edit'
+                  className='nav-links buton-edit text-center'
                   // onClick navigate='/login'
                 >
-                  Edit Component
+                  EDIT 
                 </NavLink>
               </div>
             </Zoom>

@@ -98,16 +98,18 @@ function WelcomeSectionEdit() {
           </div>
         </Zoom>
       </div>
-      <div>
+      <div  className='input-edit '>
         <input
+        className='w-100 mb-1 border border-dark rounded'
           placeholder='Title'
           onChange={(event) => {
             setNewTitle1(event.target.value)
           }}
         />
-      </div>
+     
 
       <textarea
+       className='w-100 mb-1 border border-dark rounded'
         id='text'
         name='text'
         placeholder='Text...'
@@ -118,6 +120,7 @@ function WelcomeSectionEdit() {
         }}
       />
       <button
+       className='w-100 mb-1 border border-dark rounded'
         onClick={() => {
           update1()
           updatePage()
@@ -126,8 +129,14 @@ function WelcomeSectionEdit() {
         Publish to database
       </button>
       <div>
-        <input type='file' onChange={handleImageChange} />
-        <button onClick={handleSubmit1}>Submit</button>
+        <input 
+         className='w-100 mb-1 border border-dark rounded'
+        type='file' 
+        onChange={handleImageChange} />
+        <button 
+         className='w-100 mb-1  rounded'
+        onClick={handleSubmit1}>Submit</button>
+      </div>
       </div>
     </div>
   )

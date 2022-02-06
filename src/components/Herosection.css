@@ -18,14 +18,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero-title {
-  padding-top: 1rem;
+.hero-title { 
+  padding-top: 0;
   background-color: #171717;
   color: aliceblue;
   font-family: 'Roboto', sans-serif;
 }
 .header-text {
-  margin-top: 15px;
+
+  margin: auto;
+  margin-top: 5px;
   letter-spacing: 0.5px;
   font-size: 16px;
   line-height: 20px;
@@ -38,6 +40,8 @@
 }
 @media (min-width: 768px) {
   .header-text {
+
+  width:70%;
     letter-spacing: 2px;
     font-size: 26px;
     line-height: 30px;
@@ -98,19 +102,31 @@
        
     }
 } */
+
+
+/*edit buttons*/
 .buton-edit {
   position:absolute;
- top:0;
+  top:0;
   right:0;
-  width:1rem;
+  width:3rem;
   height: 5px;
   font-size: 10px;
+  font-weight: 800;
+  letter-spacing:1px;
   padding:0;
   margin: 0;
   border:3px solid rgb(231, 231, 231);
   background-color: yellow;
-  color:red;
+  color:rgb(255, 0, 55);
 }
+.input-edit{
+  
+  width:20rem;
+  border:5px solid yellow;
+  z-index: 1;
+}
+
 @media(min-width: 961px) {
   .buton-edit {
     width:7rem;

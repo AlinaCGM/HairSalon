@@ -8,6 +8,7 @@ import '../../Herosection.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Zoom from 'react-reveal/Zoom'
 import Navbar from '../../Navbar'
+import reactDom from 'react-dom'
 
 function HeroSectionEdit() {
   const [postLists, setPostList] = useState([])
@@ -94,19 +95,21 @@ function HeroSectionEdit() {
           </Zoom>
         </div>
       </div>
-      <div>
+      <div className='input-edit '>
         <input
-          placeholder='Title'
+        className='w-100 mb-1 border border-dark rounded'
+          placeholder='Title header'
           onChange={(event) => {
             setNewTitle1(event.target.value)
           }}
         />
-      </div>
+     
 
       <textarea
+      className='w-100  mb-1 border border-dark rounded'
         id='text'
         name='text'
-        placeholder='Text...'
+        placeholder='Text header'
         type='text'
         required
         onChange={(event) => {
@@ -114,6 +117,7 @@ function HeroSectionEdit() {
         }}
       />
       <button
+       className='w-100  mb-1 border border-dark rounded'
         onClick={() => {
           update1()
           updatePage()
@@ -121,10 +125,19 @@ function HeroSectionEdit() {
       >
         Publish to database
       </button>
+     
+
+
       <div>
-        <input type='file' onChange={handleImageChange} />
-        <button onClick={handleSubmit1}>Submit</button>
+        <input 
+         className='w-100  mb-1 border-dark rounded'
+        type='file' 
+        onChange={handleImageChange} />
+        <button 
+        className='w-100  mb-1 rounded'
+        onClick={handleSubmit1}>Submit</button>
       </div>
+    </div>
     </div>
   )
 }
