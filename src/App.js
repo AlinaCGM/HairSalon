@@ -12,6 +12,7 @@ import Price from './components/pages/Price'
 import Services from './components/pages/Services.js'
 import Login from '../src/components/pages/Login'
 import HeroSectionEdit from '../src/components/pages/Edits/HeroEdit'
+import MainEdit from './components/pages/Edits/EditPage'
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem('isAuth'))
@@ -27,7 +28,7 @@ function App() {
           <Route path='/price' element={<Price />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
-          <Route path='/heroedit' element={<HeroSectionEdit />} />
+          <Route path='/editpage' element={<MainEdit />} />
         </Routes>
       </Router>
     </>

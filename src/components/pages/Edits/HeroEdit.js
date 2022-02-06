@@ -7,6 +7,7 @@ import { Image } from 'react-bootstrap'
 import '../../Herosection.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Zoom from 'react-reveal/Zoom'
+import Navbar from '../../Navbar'
 
 function HeroSectionEdit() {
   const [postLists, setPostList] = useState([])
@@ -31,7 +32,7 @@ function HeroSectionEdit() {
   }
 
   const handleSubmit1 = () => {
-    const imageRef = ref(storage, 'imageHairHero')
+    const imageRef = ref(storage, 'hairTemplate/imageHairHero')
     uploadBytes(imageRef, image)
       .then(() => {
         setImage(null)
@@ -66,7 +67,7 @@ function HeroSectionEdit() {
   }
 
   const storage1 = getStorage()
-  getDownloadURL(ref(storage, 'image1')).then((url) => {
+  getDownloadURL(ref(storage, 'hairTemplate/imageHairHero')).then((url) => {
     setFiles1(url)
     return
   })
@@ -80,14 +81,49 @@ function HeroSectionEdit() {
 
   return (
     <div>
+      <Navbar />
       <div className='hero-container' id='hero'>
         <div className='row d-flex justify-content-center w-100'>
-          <div className='col-7 col-lg-8 main-img '></div>
+          <div
+            className='col-7 col-lg-8 main-img'
+            style={{ backgroundImage: `url(${files1})` }}
+          ></div>
 
           <Zoom delay={500}>
             <div className='col-5  col-lg-4 hero-title'>{contentHero}</div>
           </Zoom>
         </div>
+      </div>
+      <div>
+        <input
+          placeholder='Title'
+          onChange={(event) => {
+            setNewTitle1(event.target.value)
+          }}
+        />
+      </div>
+
+      <textarea
+        id='text'
+        name='text'
+        placeholder='Text...'
+        type='text'
+        required
+        onChange={(event) => {
+          setNewText1(event.target.value)
+        }}
+      />
+      <button
+        onClick={() => {
+          update1()
+          updatePage()
+        }}
+      >
+        Publish to database
+      </button>
+      <div>
+        <input type='file' onChange={handleImageChange} />
+        <button onClick={handleSubmit1}>Submit</button>
       </div>
     </div>
   )

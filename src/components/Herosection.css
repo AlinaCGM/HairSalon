@@ -1,90 +1,85 @@
 .hero-container {
-    position: relative;
-    width: 100%;
-    margin-top: 0;
-    background-color: #171717;
- 
-    display: flex;
-    height: auto;
-    min-height: 30vh;
-    overflow-x: hidden;
-}
-.main-img, .hero-title {
-    height:auto;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  background-color: #171717;
 
+  display: flex;
+  height: auto;
+  min-height: 30vh;
+  overflow-x: hidden;
+}
+.main-img,
+.hero-title {
+  height: auto;
 }
 .main-img {
-    background-image: url(../images/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  /* background-image: url(https://firebasestorage.googleapis.com/v0/b/template-a3c3e.appspot.com/o/hairTemplate%2FimageHairHero.jpg?alt=media&token=e5080686-4b32-4c24-8939-730fd28de3e0); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
-    padding-top: 1rem;
-    background-color: #171717;
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif;
-   
+  padding-top: 1rem;
+  background-color: #171717;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
 }
 .header-text {
-    margin-top: 15px;
-    letter-spacing: 0.5px;
-    font-size: 16px;
-    line-height: 20px;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .second-text {
-    padding-top: 10px;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: 1.5px;
-   
+  padding-top: 10px;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
 }
-@media(min-width:768px){
-    .header-text {
-        letter-spacing: 2px;
-        font-size: 26px;
-        line-height: 30px;
-    }
-    .second-text {
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 2px;
-       
-    }
+@media (min-width: 768px) {
+  .header-text {
+    letter-spacing: 2px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .second-text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
 }
-@media(min-width:1440px){
-    .hero-container {
-       height:40vh;
-    }
-    .header-text {
-        letter-spacing: 5px;
-        font-size: 28px;
-        line-height: 45px;
-    }
-    .second-text { 
-        font-size: 20px;
-        line-height: 32px;
-        letter-spacing: 3px;
-       
-    }
+@media (min-width: 1440px) {
+  .hero-container {
+    height: 40vh;
+  }
+  .header-text {
+    letter-spacing: 5px;
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .second-text {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
 }
- @media(min-width:2100px){
-    .hero-container {
-       height:40vh;
-    }
-    .header-text {
-        padding-top:10%;
-        letter-spacing: 6px;
-        font-size: 50px;
-        line-height: 65px;
-    }
-    .second-text { 
-        padding-top:8%;
-        font-size: 25px;
-        line-height: 40px;
-        letter-spacing: 5px;
-       
-    }
+@media (min-width: 2100px) {
+  .hero-container {
+    height: 40vh;
+  }
+  .header-text {
+    padding-top: 10%;
+    letter-spacing: 6px;
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .second-text {
+    padding-top: 8%;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 5px;
+  }
 }
 /*
 @media(min-width:1700px){

@@ -50,7 +50,7 @@ function HeroSection() {
 
                 <NavLink
                   exact
-                  to='/heroedit'
+                  to='/editpage'
                   activeClassName='active'
                   className='nav-links'
                   // onClick navigate='/login'
