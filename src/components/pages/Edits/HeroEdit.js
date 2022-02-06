@@ -130,7 +130,7 @@ function HeroSectionEdit() {
 
       <div>
         <input 
-         className='w-100  mb-1 border-dark rounded'
+         className='w-100  mb-1 border border-dark rounded'
         type='file' 
         onChange={handleImageChange} />
         <button 
