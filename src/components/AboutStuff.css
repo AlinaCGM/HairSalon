@@ -1,49 +1,62 @@
 .aboutStuff-container {
-    /* background-color: #C4C4C4; */
-    width:100%;
-    height:auto;
-    position: relative;
-    margin: auto;
-    margin-bottom: 2rem;
-    overflow-x: hidden;
+  /* background-color: #C4C4C4; */
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 2rem;
+  overflow-x: hidden;
 }
 .containerabout {
-    width:80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
-  .about-pics {
-    margin: 0.5rem ; 
-    width:auto;
-    height: 90%;
-    align-items: center;
-    border:5px solid #c0b8b8; 
+.about-pics {
+  margin: 0.5rem;
+  width: auto;
+  height: 90%;
+  align-items: center;
+  border: 5px solid #c0b8b8;
 }
 .foto-stuff {
-    width:100%;
-    height: auto;
-    
+  width: 100%;
+  height: auto;
 }
 
 .color-goldy {
-    color:#3A3939;
+  color: #3a3939;
 }
-.stuff-about {   
- height:40px;
- border-top:2px solid #c0b8b8; 
- /* background-color: #e0d8d8; */
-padding-top: 10px;
- font-size: small;
-}   
+.stuff-about {
+  height: 50px;
+  border-top: 2px solid #c0b8b8;
+  /* background-color: #e0d8d8; */
+  padding-top: 2%;
+  font-size: small;
+}
 
 @keyframes toColor {
-    0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
-    25%   { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
-    50%   { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
-    75%   { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
-    100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+  0% {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  25% {
+    -webkit-filter: grayscale(75%);
+    filter: grayscale(75%);
+  }
+  50% {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+  }
+  75% {
+    -webkit-filter: grayscale(25%);
+    filter: grayscale(25%);
+  }
+  100% {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }
 
-
-.foto-stuff{ 
-   animation: toColor 10s;
+.foto-stuff {
+  animation: toColor 10s;
 }
