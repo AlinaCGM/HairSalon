@@ -184,6 +184,22 @@ function ServicesSectionEdit() {
     <>{text.titleservices4}</>
   ))
 
+  const clearFields = () => {
+    document.getElementById('input1').value = ''
+  }
+
+  const clearFields2 = () => {
+    document.getElementById('input2').value = ''
+  }
+
+  const clearFields3 = () => {
+    document.getElementById('input3').value = ''
+  }
+
+  const clearFields4 = () => {
+    document.getElementById('input4').value = ''
+  }
+
   return (
     <div className='cardPics-container container w-100 mx-0' id='servicesSection'>
     
@@ -214,6 +230,7 @@ function ServicesSectionEdit() {
 
         <div className='input-edit mt-3  input-servicesIcons'>
           <input
+            id='input1'
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
             onChange={(event) => {
@@ -225,6 +242,7 @@ function ServicesSectionEdit() {
             onClick={() => {
               update1()
               updatePage()
+              clearFields()
             }}
           >
             Publish to database
@@ -265,6 +283,7 @@ function ServicesSectionEdit() {
     
         <div className='input-edit mt-3  input-servicesIcons'>
           <input
+            id='input2'
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
             onChange={(event) => {
@@ -276,6 +295,7 @@ function ServicesSectionEdit() {
             onClick={() => {
               update2()
               updatePage()
+              clearFields2()
             }}
           >
             Publish to database
@@ -317,6 +337,7 @@ function ServicesSectionEdit() {
     
         <div className='input-edit mt-3  input-servicesIcons'>
           <input
+            id='input3'
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
             onChange={(event) => {
@@ -328,6 +349,7 @@ function ServicesSectionEdit() {
             onClick={() => {
               update3()
               updatePage()
+              clearFields3()
             }}
           >
             Publish to database
@@ -369,6 +391,7 @@ function ServicesSectionEdit() {
     
         <div className='input-edit mt-3  input-servicesIcons'>
           <input
+            id='input4'
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
             onChange={(event) => {
@@ -380,6 +403,7 @@ function ServicesSectionEdit() {
             onClick={() => {
               update4()
               updatePage()
+              clearFields4()
             }}
           >
             Publish to database

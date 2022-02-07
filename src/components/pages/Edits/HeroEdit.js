@@ -80,6 +80,13 @@ function HeroSectionEdit() {
     </>
   ))
 
+  const clearFields = () => {
+    document.getElementById('inputs').value = ''
+  }
+  const clearFields1 = () => {
+    document.getElementById('text1s').value = ''
+  }
+
   return (
     <div>
       <Navbar />
@@ -97,47 +104,51 @@ function HeroSectionEdit() {
       </div>
       <div className='input-edit mt-3'>
         <input
-        className='w-100 mb-2 rounded text-input'
+          id='inputs'
+          className='w-100 mb-2 rounded text-input'
           placeholder='Title header'
           onChange={(event) => {
             setNewTitle1(event.target.value)
           }}
         />
-     
 
-      <textarea
-      className='w-100  mb-2 rounded text-input'
-        id='text'
-        name='text'
-        placeholder='Text header'
-        type='text'
-        required
-        onChange={(event) => {
-          setNewText1(event.target.value)
-        }}
-      />
-      <button
-       className='w-100  mb-2 rounded text-input bold'
-        onClick={() => {
-          update1()
-          updatePage()
-        }}
-      >
-        Publish to database
-      </button>
-     
+        <textarea
+          className='w-100  mb-2 rounded text-input'
+          id='text1s'
+          name='text'
+          placeholder='Text header'
+          type='text'
+          required
+          onChange={(event) => {
+            setNewText1(event.target.value)
+          }}
+        />
+        <button
+          className='w-100  mb-2 rounded text-input bold'
+          onClick={() => {
+            update1()
+            updatePage()
+            clearFields()
+            clearFields1()
+          }}
+        >
+          Publish to database
+        </button>
 
-
-      <div>
-        <input 
-         className='w-100  mb-2 rounded text-input bold'
-        type='file' 
-        onChange={handleImageChange} />
-        <button 
-        className='w-100  mb-1 rounded text-input bold'
-        onClick={handleSubmit1}>Submit</button>
+        <div>
+          <input
+            className='w-100  mb-2 rounded text-input bold'
+            type='file'
+            onChange={handleImageChange}
+          />
+          <button
+            className='w-100  mb-1 rounded text-input bold'
+            onClick={handleSubmit1}
+          >
+            Submit
+          </button>
+        </div>
       </div>
-    </div>
     </div>
   )
 }
