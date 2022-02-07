@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom'
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore'
 import { ref, uploadBytes, getDownloadURL, getStorage } from 'firebase/storage'
 import { Image } from 'react-bootstrap'
-import '../../Welcome.css'
+import '../Edits/Edit.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Zoom from 'react-reveal/Zoom'
+// import Zoom from 'react-reveal/Zoom'
 import Navbar from '../../Navbar'
 
 function ServicesSectionEdit() {
@@ -185,16 +185,21 @@ function ServicesSectionEdit() {
   ))
 
   return (
-    <div className='cardPics-container container' id='aboutstuff'>
-      <Zoom delay={400}>
+    <div className='cardPics-container container w-100 mx-0' id='servicesSection'>
+    
         <h4 className='title text-center'>
           <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
           {contentHeaderServices2}
         </h4>
-      </Zoom>
-      <div className='row d-flex justify-content-around '>
-        <Zoom delay={430}>
-          <div className='col-11 col-md-6 col-lg-3'>
+     
+      <div className='row d-flex justify-content-around service-box-border '>
+      
+      
+      
+      
+      
+       <div className='firstServiceImage'>
+        <div className='col-11 col-md-6 col-lg-3'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -205,9 +210,9 @@ function ServicesSectionEdit() {
               <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
           </div>
-        </Zoom>
-        <br />
-        <div className='input-edit mt-3 input-welcome'>
+    
+
+        <div className='input-edit mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
@@ -216,7 +221,7 @@ function ServicesSectionEdit() {
             }}
           />
           <button
-            className='w-100 mb-1 rounded text-input'
+            className='w-100 rounded text-input'
             onClick={() => {
               update1()
               updatePage()
@@ -224,7 +229,8 @@ function ServicesSectionEdit() {
           >
             Publish to database
           </button>
-          <div>
+          </div>
+          <div className='input-edit mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -239,24 +245,28 @@ function ServicesSectionEdit() {
           </div>
         </div>
 
-        <Zoom delay={440}>
-          <div className='col-11 col-md-6 col-lg-3'>
-            <div className=' all-pics card-2'>
+
+
+
+
+        <div className='firstServiceImage'>
+        <div className='col-11 col-md-6 col-lg-3'>
+            <div className='all-pics card-1'>
               <Image
-                className='foto-card card-2'
+                className='foto-card card-1'
                 path='/about'
                 alt='image'
                 src={files2}
               />
-              <h3 className=' name-pics text-center'>{contentCardServices2}</h3>
+              <h3 className='name-pics text-center'>{contentCardServices2}</h3>
             </div>
           </div>
-        </Zoom>
-        <br />
-        <div className='input-edit mt-3 input-welcome'>
+    
+    
+        <div className='input-edit mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services 2'
+            placeholder='Text Services'
             onChange={(event) => {
               setNewTitle2(event.target.value)
             }}
@@ -270,7 +280,8 @@ function ServicesSectionEdit() {
           >
             Publish to database
           </button>
-          <div>
+          </div>
+          <div className='input-edit mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -285,30 +296,35 @@ function ServicesSectionEdit() {
           </div>
         </div>
 
-        <Zoom delay={450}>
-          <div className='col-11 col-md-6 col-lg-3'>
-            <div className=' all-pics card-3'>
+
+
+
+
+
+        <div className='firstServiceImage'>
+        <div className='col-11 col-md-6 col-lg-3'>
+            <div className='all-pics card-1'>
               <Image
-                className='foto-card card-3'
+                className='foto-card card-1'
                 path='/about'
                 alt='image'
                 src={files3}
               />
-              <h3 className=' name-pics text-center'>{contentCardServices3}</h3>
+              <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
           </div>
-        </Zoom>
-        <br />
-        <div className='input-edit mt-3 input-welcome'>
+    
+    
+        <div className='input-edit mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services 3'
+            placeholder='Text Services'
             onChange={(event) => {
               setNewTitle3(event.target.value)
             }}
           />
           <button
-            className='w-100 mb-1 rounded text-input'
+            className='w-100  rounded text-input'
             onClick={() => {
               update3()
               updatePage()
@@ -316,7 +332,8 @@ function ServicesSectionEdit() {
           >
             Publish to database
           </button>
-          <div>
+          </div>
+          <div className='input-edit mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -331,30 +348,35 @@ function ServicesSectionEdit() {
           </div>
         </div>
 
-        <Zoom delay={460}>
-          <div className='col-11 col-md-6 col-lg-3'>
-            <div className=' all-pics card-4'>
+
+
+
+
+
+        <div className='firstServiceImage'>
+        <div className='col-11 col-md-6 col-lg-3'>
+            <div className='all-pics card-1'>
               <Image
-                className='foto-card card'
+                className='foto-card card-1'
                 path='/about'
                 alt='image'
                 src={files4}
               />
-              <h3 className=' name-pics text-center'>{contentCardServices4}</h3>
+              <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
           </div>
-        </Zoom>
-        <br />
-        <div className='input-edit mt-3 input-welcome'>
+    
+    
+        <div className='input-edit mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services 4'
+            placeholder='Text Services'
             onChange={(event) => {
               setNewTitle4(event.target.value)
             }}
           />
           <button
-            className='w-100 mb-1 rounded text-input'
+            className='w-100  rounded text-input'
             onClick={() => {
               update4()
               updatePage()
@@ -362,7 +384,8 @@ function ServicesSectionEdit() {
           >
             Publish to database
           </button>
-          <div>
+          </div>
+          <div className='input-edit mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -376,6 +399,9 @@ function ServicesSectionEdit() {
             </button>
           </div>
         </div>
+    
+
+    
       </div>
     </div>
   )

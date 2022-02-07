@@ -4,13 +4,14 @@
     height:auto;
     position: relative;
     margin: auto;
+    padding:0;
     margin-bottom: 2rem;
     overflow-x: hidden;
 }
   .all-pics {
     margin: 0.5rem ; 
-    width:auto;
-    height: 90%;
+    width:100%;
+    height: auto;
     align-items: center;
 }
 .foto-card {
@@ -37,3 +38,16 @@ background-color: #C4C4C4;
 padding-top: 20px;
  font-size: small;
 }   
+/*edit page*/
+.service-box-border {
+    border:3px solid red;
+    width:100%;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.firstServiceImage {
+    border: 1px solid rgb(9, 0, 128);
+    width:30%;
+}

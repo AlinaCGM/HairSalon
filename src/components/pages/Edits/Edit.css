@@ -1,0 +1,77 @@
+/**/
+
+/*serviceSectione*/
+.service-box-border {
+    border:3px solid red;
+    width:100%;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.firstServiceImage {
+    border: 1px solid rgb(9, 0, 128);
+    width:30%;
+}
+
+
+
+
+/*welcome*/
+
+  .input-edit{
+    margin-left: 2rem;
+    width:20rem;
+    /* border:5px solid rgb(8, 8, 8); */
+    
+  }
+  
+  .text-input{
+    box-shadow: 0 8px 16px 0 rgba(88, 73, 73, 0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border:3px solid rgb(59, 149, 190);
+    background-color: rgb(149, 146, 146);
+    color:#171717;
+   
+  }
+   .text-input:hover{
+  
+    transform:translate(2px, 2px);
+  }
+  .text-input::placeholder {
+    background-color: rgb(149, 146, 146);
+    color:#424141;
+  }
+  .bold{
+    font-weight: 600;
+    color:#272525;
+  }
+
+/*edit buttons*/
+.buton-edit {
+    position:absolute;
+    bottom:5px;
+    right:0;
+    width:3rem;
+    height: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing:1px;
+    padding:0;
+    margin: 0;
+    border:3px solid rgb(231, 231, 231);
+    background-color: yellow;
+    color:rgb(255, 0, 55);
+  }
+
+
+
+  @media(min-width: 961px) {
+    .buton-edit {
+      width:7rem;
+      height: 35px;
+      font-size: 14px;
+      padding-top:5px;
+    }
+  }
+
+/**/
