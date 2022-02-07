@@ -12,7 +12,7 @@ import Navbar from '../../Navbar'
 function ServicesSectionEdit() {
   const [postLists, setPostList] = useState([])
   const [newMainTitle1, setNewMainTitle1] = useState('')
-  const [newText1, setNewText1] = useState('')
+  const [newMainTitle2, setNewMainTitle2] = useState('')
   const [newTitle1, setNewTitle1] = useState('')
   const [newTitle2, setNewTitle2] = useState('')
   const [newTitle3, setNewTitle3] = useState('')
@@ -162,18 +162,18 @@ function ServicesSectionEdit() {
   )
 
   const contentHeaderServices1 = postLists.map((text) => (
-    <>
-      <h4 className='title text-center'>
-        <h2 className='boldy fs-4'>HAIRDRESSING</h2> SERVICES
-      </h4>
-    </>
+    <>{text.headertitleservices}</>
+  ))
+  const contentHeaderServices2 = postLists.map((text) => (
+    <>{text.headertitleservices2}</>
   ))
 
   return (
     <div className='cardPics-container container' id='aboutstuff'>
       <Zoom delay={400}>
         <h4 className='title text-center'>
-          <h2 className='boldy fs-4'>HAIRDRESSING</h2> SERVICES
+          <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
+          {contentHeaderServices2}
         </h4>
       </Zoom>
       <div className='row d-flex justify-content-around '>
