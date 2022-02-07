@@ -59,6 +59,28 @@
 
 .input-edit{
   width:20rem;
-  border:5px solid yellow;
+  /* border:5px solid yellow; */
   z-index: 1;
+}
+.input-edit{
+  margin-left: 2rem;
+  width:20rem;
+  /* border:5px solid rgb(8, 8, 8); */
+  z-index: 1;
+}
+
+.text-input{
+  box-shadow: 0 8px 16px 0 rgba(88, 73, 73, 0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border:3px solid rgb(59, 149, 190);
+  background-color: rgb(149, 146, 146);
+  color:#171717;
+  font-weight: 600;
+}
+ .text-input:hover{
+  background-color: rgba(75, 83, 109, 0.5);
+  transform:translate(2px, 2px);
+}
+.text-input::placeholder {
+  background-color: rgb(152, 181, 194);
+  color:#171717;
 }

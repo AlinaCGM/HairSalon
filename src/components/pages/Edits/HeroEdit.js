@@ -95,9 +95,9 @@ function HeroSectionEdit() {
           </Zoom>
         </div>
       </div>
-      <div className='input-edit '>
+      <div className='input-edit mt-3'>
         <input
-        className='w-100 mb-1 border border-dark rounded'
+        className='w-100 mb-2 rounded text-input'
           placeholder='Title header'
           onChange={(event) => {
             setNewTitle1(event.target.value)
@@ -106,7 +106,7 @@ function HeroSectionEdit() {
      
 
       <textarea
-      className='w-100  mb-1 border border-dark rounded'
+      className='w-100  mb-2 rounded text-input'
         id='text'
         name='text'
         placeholder='Text header'
@@ -117,7 +117,7 @@ function HeroSectionEdit() {
         }}
       />
       <button
-       className='w-100  mb-1 border border-dark rounded'
+       className='w-100  mb-2 rounded text-input'
         onClick={() => {
           update1()
           updatePage()
@@ -130,11 +130,11 @@ function HeroSectionEdit() {
 
       <div>
         <input 
-         className='w-100  mb-1 border border-dark rounded'
+         className='w-100  mb-2 rounded text-input'
         type='file' 
         onChange={handleImageChange} />
         <button 
-        className='w-100  mb-1 rounded'
+        className='w-100  mb-1 rounded text-input'
         onClick={handleSubmit1}>Submit</button>
       </div>
     </div>
