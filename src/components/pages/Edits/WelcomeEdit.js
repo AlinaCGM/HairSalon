@@ -101,7 +101,7 @@ function WelcomeSectionEdit() {
       <div  className='input-edit mt-3 input-welcome'>
         <input
         className='w-100 mb-1  rounded text-input'
-          placeholder='Title'
+          placeholder='Title Welcome'
           onChange={(event) => {
             setNewTitle1(event.target.value)
           }}
@@ -112,7 +112,7 @@ function WelcomeSectionEdit() {
        className='w-100 mb-1 rounded text-input'
         id='text'
         name='text'
-        placeholder='Text...'
+        placeholder='Text Welcome'
         type='text'
         required
         onChange={(event) => {
