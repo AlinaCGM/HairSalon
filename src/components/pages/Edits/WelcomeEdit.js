@@ -25,7 +25,6 @@ function WelcomeSectionEdit() {
     })
   }
 
-  const clear = () => {}
   // const handleSubmit = (e) => {
   //   e.preventDefault()
   //   const form = e.target
@@ -83,6 +82,13 @@ function WelcomeSectionEdit() {
     </>
   ))
 
+  const clearFields = () => {
+    document.getElementById('inputz').value = ''
+  }
+  const clearFields1 = () => {
+    document.getElementById('text1z').value = ''
+  }
+
   return (
     <div className='second-container' id='second'>
       <div className='row d-flex justify-content-around second-box'>
@@ -102,6 +108,7 @@ function WelcomeSectionEdit() {
       </div>
       <div className='input-edit mt-3 input-welcome'>
         <input
+          id='inputz'
           className='w-100 mb-1  rounded text-input'
           placeholder='Title Welcome'
           onChange={(event) => {
@@ -111,7 +118,7 @@ function WelcomeSectionEdit() {
 
         <textarea
           className='w-100 mb-1 rounded text-input'
-          id='text'
+          id='text1z'
           name='text'
           placeholder='Text Welcome'
           type='text'
@@ -125,6 +132,8 @@ function WelcomeSectionEdit() {
           onClick={() => {
             update1()
             updatePage()
+            clearFields()
+            clearFields1()
           }}
         >
           Publish to database
