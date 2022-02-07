@@ -107,7 +107,7 @@
 /*edit buttons*/
 .buton-edit {
   position:absolute;
-  top:0;
+  bottom:5px;
   right:0;
   width:3rem;
   height: 5px;
