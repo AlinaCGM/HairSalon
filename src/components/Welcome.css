@@ -82,5 +82,9 @@
 }
 .text-input::placeholder {
   background-color: rgb(149, 146, 146);
-  color:#171717;
+  color:#424141;
+}
+.bold{
+  font-weight: 600;
+  color:#272525;
 }

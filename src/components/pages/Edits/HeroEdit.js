@@ -117,7 +117,7 @@ function HeroSectionEdit() {
         }}
       />
       <button
-       className='w-100  mb-2 rounded text-input'
+       className='w-100  mb-2 rounded text-input bold'
         onClick={() => {
           update1()
           updatePage()
@@ -130,11 +130,11 @@ function HeroSectionEdit() {
 
       <div>
         <input 
-         className='w-100  mb-2 rounded text-input'
+         className='w-100  mb-2 rounded text-input bold'
         type='file' 
         onChange={handleImageChange} />
         <button 
-        className='w-100  mb-1 rounded text-input'
+        className='w-100  mb-1 rounded text-input bold'
         onClick={handleSubmit1}>Submit</button>
       </div>
     </div>
