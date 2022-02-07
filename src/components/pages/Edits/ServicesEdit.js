@@ -7,7 +7,7 @@ import { Image } from 'react-bootstrap'
 import '../Edits/Edit.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import Zoom from 'react-reveal/Zoom'
-import Navbar from '../../Navbar'
+// import Navbar from '../../Navbar'
 
 function ServicesSectionEdit() {
   const [postLists, setPostList] = useState([])
@@ -185,21 +185,21 @@ function ServicesSectionEdit() {
   ))
 
   return (
-    <div className='cardPics-container container w-100 mx-0' id='servicesSection'>
+    <div className='cardPics-container  w-100 mx-auto' id='servicesSection'>
     
         <h4 className='title text-center'>
           <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
           {contentHeaderServices2}
         </h4>
      
-      <div className='row d-flex justify-content-around service-box-border '>
+      <div className='row d-flex justify-content-around '>
       
       
       
       
       
-       <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+       
+        <div className='col-6 col-md-6 col-lg-3 servicesCol '>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -209,10 +209,10 @@ function ServicesSectionEdit() {
               />
               <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
-          </div>
+         
     
 
-        <div className='input-edit mt-3  input-servicesIcons'>
+        <div className='input-edits mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
@@ -230,7 +230,7 @@ function ServicesSectionEdit() {
             Publish to database
           </button>
           </div>
-          <div className='input-edit mt-3  input-servicesIcons'>
+          <div className='input-edits mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -243,14 +243,14 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-        </div>
+          </div>
 
 
 
 
 
-        <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+       
+        <div className='col-6 col-md-6 col-lg-3 servicesCol'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -260,10 +260,10 @@ function ServicesSectionEdit() {
               />
               <h3 className='name-pics text-center'>{contentCardServices2}</h3>
             </div>
-          </div>
+          
     
     
-        <div className='input-edit mt-3  input-servicesIcons'>
+        <div className='input-edits mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
@@ -272,7 +272,7 @@ function ServicesSectionEdit() {
             }}
           />
           <button
-            className='w-100 mb-1 rounded text-input'
+            className='w-100  rounded text-input'
             onClick={() => {
               update2()
               updatePage()
@@ -281,7 +281,7 @@ function ServicesSectionEdit() {
             Publish to database
           </button>
           </div>
-          <div className='input-edit mt-3  input-servicesIcons'>
+          <div className='input-edits mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -294,15 +294,15 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-        </div>
+          </div>
 
 
 
 
 
 
-        <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+     
+        <div className='col-6 col-md-6 col-lg-3 servicesCol'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -312,10 +312,10 @@ function ServicesSectionEdit() {
               />
               <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
-          </div>
+        
     
     
-        <div className='input-edit mt-3  input-servicesIcons'>
+        <div className='input-edits mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
@@ -333,7 +333,7 @@ function ServicesSectionEdit() {
             Publish to database
           </button>
           </div>
-          <div className='input-edit mt-3  input-servicesIcons'>
+          <div className='input-edits mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -346,15 +346,15 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-        </div>
+          </div>
 
 
 
 
 
 
-        <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+        
+        <div className='col-6 col-md-6 col-lg-3 servicesCol'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -364,10 +364,10 @@ function ServicesSectionEdit() {
               />
               <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
-          </div>
+          
     
     
-        <div className='input-edit mt-3  input-servicesIcons'>
+        <div className='input-edits mt-3  input-servicesIcons'>
           <input
             className='w-100 mb-1  rounded text-input'
             placeholder='Text Services'
@@ -385,7 +385,7 @@ function ServicesSectionEdit() {
             Publish to database
           </button>
           </div>
-          <div className='input-edit mt-3  input-servicesIcons'>
+          <div className='input-edits mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -398,7 +398,7 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-        </div>
+          </div>
     
 
     

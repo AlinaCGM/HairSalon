@@ -8,20 +8,21 @@
     margin: 0;
     padding: 0;
 }
-
-.firstServiceImage {
-    border: 1px solid rgb(9, 0, 128);
-    width:30%;
+.servicesCol {
+  border:1px solid green;
 }
-
+.input-servicesIcons {
+  width:90%;
+  margin: auto;
+}
 
 
 
 /*welcome*/
 
   .input-edit{
-    margin-left: 2rem;
-    width:20rem;
+    margin:auto ;
+    width:280px;
     /* border:5px solid rgb(8, 8, 8); */
     
   }
