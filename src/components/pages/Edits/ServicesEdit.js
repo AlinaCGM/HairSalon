@@ -18,6 +18,10 @@ function ServicesSectionEdit() {
   const [newTitle3, setNewTitle3] = useState('')
   const [newTitle4, setNewTitle4] = useState('')
   const [files1, setFiles1] = useState([])
+  const [files2, setFiles2] = useState([])
+  const [files3, setFiles3] = useState([])
+  const [files4, setFiles4] = useState([])
+
   const [image, setImage] = useState(null)
   const postsCollectionRef = collection(db, 'frizerie')
 
@@ -140,7 +144,7 @@ function ServicesSectionEdit() {
   const storage2 = getStorage()
   getDownloadURL(ref(storage, 'hairTemplate/imageHairServices2')).then(
     (url) => {
-      setFiles1(url)
+      setFiles2(url)
       return
     }
   )
@@ -148,7 +152,7 @@ function ServicesSectionEdit() {
   const storage3 = getStorage()
   getDownloadURL(ref(storage, 'hairTemplate/imageHairServices3')).then(
     (url) => {
-      setFiles1(url)
+      setFiles3(url)
       return
     }
   )
@@ -156,7 +160,7 @@ function ServicesSectionEdit() {
   const storage4 = getStorage()
   getDownloadURL(ref(storage, 'hairTemplate/imageHairServices4')).then(
     (url) => {
-      setFiles1(url)
+      setFiles4(url)
       return
     }
   )
@@ -166,6 +170,18 @@ function ServicesSectionEdit() {
   ))
   const contentHeaderServices2 = postLists.map((text) => (
     <>{text.headertitleservices2}</>
+  ))
+  const contentCardServices1 = postLists.map((text) => (
+    <>{text.titleservices1}</>
+  ))
+  const contentCardServices2 = postLists.map((text) => (
+    <>{text.titleservices2}</>
+  ))
+  const contentCardServices3 = postLists.map((text) => (
+    <>{text.titleservices3}</>
+  ))
+  const contentCardServices4 = postLists.map((text) => (
+    <>{text.titleservices4}</>
   ))
 
   return (
@@ -180,62 +196,186 @@ function ServicesSectionEdit() {
         <Zoom delay={430}>
           <div className='col-11 col-md-6 col-lg-3'>
             <div className='all-pics card-1'>
-              <img
+              <Image
                 className='foto-card card-1'
-                src='/images/one.jpeg'
                 path='/about'
-                alt=''
+                alt='image'
+                src={files1}
               />
-              <h3 className='name-pics text-center'>HAIRCUTS</h3>
+              <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
           </div>
         </Zoom>
         <br />
+        <div className='input-edit mt-3 input-welcome'>
+          <input
+            className='w-100 mb-1  rounded text-input'
+            placeholder='Text Services'
+            onChange={(event) => {
+              setNewTitle1(event.target.value)
+            }}
+          />
+          <button
+            className='w-100 mb-1 rounded text-input'
+            onClick={() => {
+              update1()
+              updatePage()
+            }}
+          >
+            Publish to database
+          </button>
+          <div>
+            <input
+              className='w-100 mb-1 rounded text-input'
+              type='file'
+              onChange={handleImageChange}
+            />
+            <button
+              className='w-100 mb-1  rounded text-input'
+              onClick={handleSubmit1}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
 
         <Zoom delay={440}>
           <div className='col-11 col-md-6 col-lg-3'>
             <div className=' all-pics card-2'>
-              <img
+              <Image
                 className='foto-card card-2'
-                src='/images/two.jpeg'
                 path='/about'
-                alt=''
+                alt='image'
+                src={files2}
               />
-              <h3 className=' name-pics text-center'>BLOW DRY&STYLE</h3>
+              <h3 className=' name-pics text-center'>{contentCardServices2}</h3>
             </div>
           </div>
         </Zoom>
         <br />
+        <div className='input-edit mt-3 input-welcome'>
+          <input
+            className='w-100 mb-1  rounded text-input'
+            placeholder='Text Services 2'
+            onChange={(event) => {
+              setNewTitle2(event.target.value)
+            }}
+          />
+          <button
+            className='w-100 mb-1 rounded text-input'
+            onClick={() => {
+              update2()
+              updatePage()
+            }}
+          >
+            Publish to database
+          </button>
+          <div>
+            <input
+              className='w-100 mb-1 rounded text-input'
+              type='file'
+              onChange={handleImageChange}
+            />
+            <button
+              className='w-100 mb-1  rounded text-input'
+              onClick={handleSubmit2}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
 
         <Zoom delay={450}>
           <div className='col-11 col-md-6 col-lg-3'>
             <div className=' all-pics card-3'>
-              <img
+              <Image
                 className='foto-card card-3'
-                src='/images/three.jpeg'
                 path='/about'
-                alt=''
+                alt='image'
+                src={files3}
               />
-              <h3 className=' name-pics text-center'>HAIR COLORING</h3>
+              <h3 className=' name-pics text-center'>{contentCardServices3}</h3>
             </div>
           </div>
         </Zoom>
         <br />
+        <div className='input-edit mt-3 input-welcome'>
+          <input
+            className='w-100 mb-1  rounded text-input'
+            placeholder='Text Services 3'
+            onChange={(event) => {
+              setNewTitle3(event.target.value)
+            }}
+          />
+          <button
+            className='w-100 mb-1 rounded text-input'
+            onClick={() => {
+              update3()
+              updatePage()
+            }}
+          >
+            Publish to database
+          </button>
+          <div>
+            <input
+              className='w-100 mb-1 rounded text-input'
+              type='file'
+              onChange={handleImageChange}
+            />
+            <button
+              className='w-100 mb-1  rounded text-input'
+              onClick={handleSubmit3}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
 
         <Zoom delay={460}>
           <div className='col-11 col-md-6 col-lg-3'>
             <div className=' all-pics card-4'>
-              <img
-                className='foto-card '
-                src='/images/four.jpeg'
+              <Image
+                className='foto-card card'
                 path='/about'
-                alt=''
+                alt='image'
+                src={files4}
               />
-              <h3 className=' name-pics text-center'>HAIR EXTENSIONS</h3>
+              <h3 className=' name-pics text-center'>{contentCardServices4}</h3>
             </div>
           </div>
         </Zoom>
         <br />
+        <div className='input-edit mt-3 input-welcome'>
+          <input
+            className='w-100 mb-1  rounded text-input'
+            placeholder='Text Services 4'
+            onChange={(event) => {
+              setNewTitle4(event.target.value)
+            }}
+          />
+          <button
+            className='w-100 mb-1 rounded text-input'
+            onClick={() => {
+              update4()
+              updatePage()
+            }}
+          >
+            Publish to database
+          </button>
+          <div>
+            <input
+              className='w-100 mb-1 rounded text-input'
+              type='file'
+              onChange={handleImageChange}
+            />
+            <button
+              className='w-100 mb-1  rounded text-input'
+              onClick={handleSubmit4}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   )
