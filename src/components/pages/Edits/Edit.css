@@ -1,5 +1,38 @@
-/**/
+/*log in*/
 
+.loginPage {
+  height: 100vh;
+   background-color: #d3c6ae; 
+ 
+ padding-top: 10rem;
+}
+.first-textLogin {
+  width:100%;
+  color:rgb(73, 69, 69);
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+ .login-with-google-btn {
+  width:13rem;
+  height: 3rem;
+  border:none;
+  background-color:transparent;
+} 
+.login-img {
+  width:13rem;
+  height: 3rem;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.login-img:active {
+  transform: scale(0.90);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
 /*serviceSectione*/
 .service-box-border {
     border:3px solid red;
