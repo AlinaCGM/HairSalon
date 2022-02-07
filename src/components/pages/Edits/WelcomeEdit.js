@@ -24,12 +24,14 @@ function WelcomeSectionEdit() {
       titlewelcom: newTitle1,
     })
   }
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
-    console.log('title', form.title, form.elements.title)
-    console.log('text', form.text, form.elements.text)
-  }
+
+  const clear = () => {}
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   const form = e.target
+  //   console.log('title', form.title, form.elements.title)
+  //   console.log('text', form.text, form.elements.text)
+  // }
 
   const handleSubmit1 = () => {
     const imageRef = ref(storage, 'hairTemplate/imageHairWelcome')
@@ -98,45 +100,48 @@ function WelcomeSectionEdit() {
           </div>
         </Zoom>
       </div>
-      <div  className='input-edit mt-3 input-welcome'>
+      <div className='input-edit mt-3 input-welcome'>
         <input
-        className='w-100 mb-1  rounded text-input'
+          className='w-100 mb-1  rounded text-input'
           placeholder='Title Welcome'
           onChange={(event) => {
             setNewTitle1(event.target.value)
           }}
         />
-     
 
-      <textarea
-       className='w-100 mb-1 rounded text-input'
-        id='text'
-        name='text'
-        placeholder='Text Welcome'
-        type='text'
-        required
-        onChange={(event) => {
-          setNewText1(event.target.value)
-        }}
-      />
-      <button
-       className='w-100 mb-1 rounded text-input bold'
-        onClick={() => {
-          update1()
-          updatePage()
-        }}
-      >
-        Publish to database
-      </button>
-      <div>
-        <input 
-         className='w-100 mb-1 rounded text-input bold'
-        type='file' 
-        onChange={handleImageChange} />
-        <button 
-         className='w-100 mb-1  rounded text-input bold'
-        onClick={handleSubmit1}>Submit</button>
-      </div>
+        <textarea
+          className='w-100 mb-1 rounded text-input'
+          id='text'
+          name='text'
+          placeholder='Text Welcome'
+          type='text'
+          required
+          onChange={(event) => {
+            setNewText1(event.target.value)
+          }}
+        />
+        <button
+          className='w-100 mb-1 rounded text-input'
+          onClick={() => {
+            update1()
+            updatePage()
+          }}
+        >
+          Publish to database
+        </button>
+        <div>
+          <input
+            className='w-100 mb-1 rounded text-input'
+            type='file'
+            onChange={handleImageChange}
+          />
+          <button
+            className='w-100 mb-1  rounded text-input'
+            onClick={handleSubmit1}
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   )
