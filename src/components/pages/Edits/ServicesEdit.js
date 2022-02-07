@@ -201,21 +201,18 @@ function ServicesSectionEdit() {
   }
 
   return (
-    <div className='cardPics-container container w-100 mx-0' id='servicesSection'>
-    
-        <h4 className='title text-center'>
-          <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
-          {contentHeaderServices2}
-        </h4>
-     
+    <div
+      className='cardPics-container container w-100 mx-0'
+      id='servicesSection'
+    >
+      <h4 className='title text-center'>
+        <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
+        {contentHeaderServices2}
+      </h4>
+
       <div className='row d-flex justify-content-around service-box-border '>
-      
-      
-      
-      
-      
-       <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+        <div className='firstServiceImage'>
+          <div className='col-11 col-md-6 col-lg-3'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -226,27 +223,26 @@ function ServicesSectionEdit() {
               <h3 className='name-pics text-center'>{contentCardServices1}</h3>
             </div>
           </div>
-    
 
-        <div className='input-edit mt-3  input-servicesIcons'>
-          <input
-            id='input1'
-            className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services'
-            onChange={(event) => {
-              setNewTitle1(event.target.value)
-            }}
-          />
-          <button
-            className='w-100 rounded text-input'
-            onClick={() => {
-              update1()
-              updatePage()
-              clearFields()
-            }}
-          >
-            Publish to database
-          </button>
+          <div className='input-edit mt-3  input-servicesIcons'>
+            <input
+              id='input1'
+              className='w-100 mb-1  rounded text-input'
+              placeholder='Text Services'
+              onChange={(event) => {
+                setNewTitle1(event.target.value)
+              }}
+            />
+            <button
+              className='w-100 rounded text-input'
+              onClick={() => {
+                update1()
+                updatePage()
+                clearFields()
+              }}
+            >
+              Publish to database
+            </button>
           </div>
           <div className='input-edit mt-3  input-servicesIcons'>
             <input
@@ -263,12 +259,8 @@ function ServicesSectionEdit() {
           </div>
         </div>
 
-
-
-
-
         <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+          <div className='col-11 col-md-6 col-lg-3'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -279,27 +271,26 @@ function ServicesSectionEdit() {
               <h3 className='name-pics text-center'>{contentCardServices2}</h3>
             </div>
           </div>
-    
-    
-        <div className='input-edit mt-3  input-servicesIcons'>
-          <input
-            id='input2'
-            className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services'
-            onChange={(event) => {
-              setNewTitle2(event.target.value)
-            }}
-          />
-          <button
-            className='w-100 mb-1 rounded text-input'
-            onClick={() => {
-              update2()
-              updatePage()
-              clearFields2()
-            }}
-          >
-            Publish to database
-          </button>
+
+          <div className='input-edit mt-3  input-servicesIcons'>
+            <input
+              id='input2'
+              className='w-100 mb-1  rounded text-input'
+              placeholder='Text Services'
+              onChange={(event) => {
+                setNewTitle2(event.target.value)
+              }}
+            />
+            <button
+              className='w-100 mb-1 rounded text-input'
+              onClick={() => {
+                update2()
+                updatePage()
+                clearFields2()
+              }}
+            >
+              Publish to database
+            </button>
           </div>
           <div className='input-edit mt-3  input-servicesIcons'>
             <input
@@ -316,13 +307,8 @@ function ServicesSectionEdit() {
           </div>
         </div>
 
-
-
-
-
-
         <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+          <div className='col-11 col-md-6 col-lg-3'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -330,30 +316,29 @@ function ServicesSectionEdit() {
                 alt='image'
                 src={files3}
               />
-              <h3 className='name-pics text-center'>{contentCardServices1}</h3>
+              <h3 className='name-pics text-center'>{contentCardServices3}</h3>
             </div>
           </div>
-    
-    
-        <div className='input-edit mt-3  input-servicesIcons'>
-          <input
-            id='input3'
-            className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services'
-            onChange={(event) => {
-              setNewTitle3(event.target.value)
-            }}
-          />
-          <button
-            className='w-100  rounded text-input'
-            onClick={() => {
-              update3()
-              updatePage()
-              clearFields3()
-            }}
-          >
-            Publish to database
-          </button>
+
+          <div className='input-edit mt-3  input-servicesIcons'>
+            <input
+              id='input3'
+              className='w-100 mb-1  rounded text-input'
+              placeholder='Text Services'
+              onChange={(event) => {
+                setNewTitle3(event.target.value)
+              }}
+            />
+            <button
+              className='w-100  rounded text-input'
+              onClick={() => {
+                update3()
+                updatePage()
+                clearFields3()
+              }}
+            >
+              Publish to database
+            </button>
           </div>
           <div className='input-edit mt-3  input-servicesIcons'>
             <input
@@ -370,13 +355,8 @@ function ServicesSectionEdit() {
           </div>
         </div>
 
-
-
-
-
-
         <div className='firstServiceImage'>
-        <div className='col-11 col-md-6 col-lg-3'>
+          <div className='col-11 col-md-6 col-lg-3'>
             <div className='all-pics card-1'>
               <Image
                 className='foto-card card-1'
@@ -384,30 +364,29 @@ function ServicesSectionEdit() {
                 alt='image'
                 src={files4}
               />
-              <h3 className='name-pics text-center'>{contentCardServices1}</h3>
+              <h3 className='name-pics text-center'>{contentCardServices4}</h3>
             </div>
           </div>
-    
-    
-        <div className='input-edit mt-3  input-servicesIcons'>
-          <input
-            id='input4'
-            className='w-100 mb-1  rounded text-input'
-            placeholder='Text Services'
-            onChange={(event) => {
-              setNewTitle4(event.target.value)
-            }}
-          />
-          <button
-            className='w-100  rounded text-input'
-            onClick={() => {
-              update4()
-              updatePage()
-              clearFields4()
-            }}
-          >
-            Publish to database
-          </button>
+
+          <div className='input-edit mt-3  input-servicesIcons'>
+            <input
+              id='input4'
+              className='w-100 mb-1  rounded text-input'
+              placeholder='Text Services'
+              onChange={(event) => {
+                setNewTitle4(event.target.value)
+              }}
+            />
+            <button
+              className='w-100  rounded text-input'
+              onClick={() => {
+                update4()
+                updatePage()
+                clearFields4()
+              }}
+            >
+              Publish to database
+            </button>
           </div>
           <div className='input-edit mt-3  input-servicesIcons'>
             <input
@@ -423,9 +402,6 @@ function ServicesSectionEdit() {
             </button>
           </div>
         </div>
-    
-
-    
       </div>
     </div>
   )
