@@ -130,6 +130,10 @@ function ServicesSectionEdit() {
   const updatePage = async () => {
     const data = await getDocs(postsCollectionRef)
     setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+    document.getElementById('input1').value = ''
+    document.getElementById('input2').value = ''
+    document.getElementById('input3').value = ''
+    document.getElementById('input4').value = ''
     return
   }
 
@@ -184,50 +188,40 @@ function ServicesSectionEdit() {
     <>{text.titleservices4}</>
   ))
 
-  const clearFields = () => {
-    document.getElementById('input1').value = ''
-  }
+  // const clearFields = () => {
+  //   document.getElementById('input1').value = ''
+  // }
 
-  const clearFields2 = () => {
-    document.getElementById('input2').value = ''
-  }
+  // const clearFields2 = () => {
+  //   document.getElementById('input2').value = ''
+  // }
 
-  const clearFields3 = () => {
-    document.getElementById('input3').value = ''
-  }
+  // const clearFields3 = () => {
+  //   document.getElementById('input3').value = ''
+  // }
 
-  const clearFields4 = () => {
-    document.getElementById('input4').value = ''
-  }
+  // const clearFields4 = () => {
+  //   document.getElementById('input4').value = ''
+  // }
 
   return (
     <div className='cardPics-container  w-100 mx-auto' id='servicesSection'>
-    
-        <h4 className='title text-center'>
-          <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
-          {contentHeaderServices2}
-        </h4>
-     
-      <div className='row d-flex justify-content-around '>
-      
-      
-      
-      
-      
-       
-        <div className='col-6 col-md-6 col-lg-3 servicesCol '>
-            <div className='all-pics card-1'>
-              <Image
-                className='foto-card card-1'
-                path='/about'
-                alt='image'
-                src={files1}
-              />
-              <h3 className='name-pics text-center'>{contentCardServices1}</h3>
-            </div>
-         
-    
+      <h4 className='title text-center'>
+        <h2 className='boldy fs-4'>{contentHeaderServices1}</h2>{' '}
+        {contentHeaderServices2}
+      </h4>
 
+      <div className='row d-flex justify-content-around '>
+        <div className='col-6 col-md-6 col-lg-3 servicesCol '>
+          <div className='all-pics card-1'>
+            <Image
+              className='foto-card card-1'
+              path='/about'
+              alt='image'
+              src={files1}
+            />
+            <h3 className='name-pics text-center'>{contentCardServices1}</h3>
+          </div>
 
           <div className='input-edits mt-3  input-servicesIcons'>
             <input
@@ -243,13 +237,13 @@ function ServicesSectionEdit() {
               onClick={() => {
                 update1()
                 updatePage()
-                clearFields()
+                // clearFields()
               }}
             >
               Publish to database
             </button>
           </div>
-          <div className='input-edits mt-3  input-servicesIcons'>
+          <div className='input-edittitleservices2s mt-3  input-servicesIcons'>
             <input
               className='w-100 mb-1 rounded text-input'
               type='file'
@@ -262,25 +256,18 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-          </div>
+        </div>
 
-
-
-
-
-       
         <div className='col-6 col-md-6 col-lg-3 servicesCol'>
-            <div className='all-pics card-1'>
-              <Image
-                className='foto-card card-1'
-                path='/about'
-                alt='image'
-                src={files2}
-              />
-              <h3 className='name-pics text-center'>{contentCardServices2}</h3>
-            </div>
-          
-
+          <div className='all-pics card-1'>
+            <Image
+              className='foto-card card-1'
+              path='/about'
+              alt='image'
+              src={files2}
+            />
+            <h3 className='name-pics text-center'>{contentCardServices2}</h3>
+          </div>
 
           <div className='input-editS mt-3  input-servicesIcons'>
             <input
@@ -296,7 +283,7 @@ function ServicesSectionEdit() {
               onClick={() => {
                 update2()
                 updatePage()
-                clearFields2()
+                // clearFields2()
               }}
             >
               Publish to database
@@ -315,26 +302,18 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-          </div>
+        </div>
 
-
-
-
-
-
-     
         <div className='col-6 col-md-6 col-lg-3 servicesCol'>
-            <div className='all-pics card-1'>
-              <Image
-                className='foto-card card-1'
-                path='/about'
-                alt='image'
-                src={files3}
-              />
-              <h3 className='name-pics text-center'>{contentCardServices3}</h3>
-            </div>
-        
-    
+          <div className='all-pics card-1'>
+            <Image
+              className='foto-card card-1'
+              path='/about'
+              alt='image'
+              src={files3}
+            />
+            <h3 className='name-pics text-center'>{contentCardServices3}</h3>
+          </div>
 
           <div className='input-edits mt-3  input-servicesIcons'>
             <input
@@ -350,7 +329,7 @@ function ServicesSectionEdit() {
               onClick={() => {
                 update3()
                 updatePage()
-                clearFields3()
+                // clearFields3()
               }}
             >
               Publish to database
@@ -369,27 +348,18 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-          </div>
+        </div>
 
-
-
-
-
-
-        
         <div className='col-6 col-md-6 col-lg-3 servicesCol'>
-            <div className='all-pics card-1'>
-              <Image
-                className='foto-card card-1'
-                path='/about'
-                alt='image'
-                src={files4}
-              />
-              <h3 className='name-pics text-center'>{contentCardServices4}</h3>
-            </div>
-          
-    
-    
+          <div className='all-pics card-1'>
+            <Image
+              className='foto-card card-1'
+              path='/about'
+              alt='image'
+              src={files4}
+            />
+            <h3 className='name-pics text-center'>{contentCardServices4}</h3>
+          </div>
 
           <div className='input-edits mt-3  input-servicesIcons'>
             <input
@@ -405,7 +375,7 @@ function ServicesSectionEdit() {
               onClick={() => {
                 update4()
                 updatePage()
-                clearFields4()
+                // clearFields4()
               }}
             >
               Publish to database
@@ -424,10 +394,7 @@ function ServicesSectionEdit() {
               Submit
             </button>
           </div>
-          </div>
-    
-
-    
+        </div>
       </div>
     </div>
   )
